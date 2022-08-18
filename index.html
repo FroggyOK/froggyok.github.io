@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/weblogo.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frog clicker</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="Logo" height=60>
+        <ul class="nav-menu">
+            <li class="lang home nav-item"><a href="#homeBtn">Додому</a></li>
+            <li class="lang media nav-item"><a href="#mediaBtn">Медіа</a></li>   
+            <li class="lang about nav-item"><a href="#aboutBtn">Про</a></li>
+            <li>
+                <select class="lnSelector">
+                    <option value="ua" selected>Укр</option>
+                    <option value="en">En</option>
+                    <option value="ru">Ру</option>
+                </select>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <main>
+        <div class="header" id="homeBtn">
+            <img src="img/Header.jpg" alt="Game scene">
+        </div>
+
+        <div class="mediaPage" id="mediaBtn">
+            <h1 class="lang mediaH">Медіа</h1>
+            <iframe src="https://www.youtube.com/embed/6lbZSlSYRNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="container">
+                <button id="left-btn"><i class="arrow"></i></button>
+                <img id="carousel" src="" alt="">
+                <button id="right-btn"><i class="arrow"></i></button>
+            </div>
+            <div class="gif_container">
+                <img src="img/gifFolder/game.gif" width=200>
+                <img src="img/gifFolder/frog.gif" width=200>
+                <img src="img/gifFolder/code.gif" width=200>
+            </div>
+        </div>
+
+        <div class="aboutSec" id="aboutBtn">
+            <div class="aboutWrapper">
+                <h1 class="lang aboutH">Про</h1>
+                <p class="lang aboutB">Команда друзів, які вирішили створити цікавий для себе проєкт, вливши в нього душу, проходячи крізь піт і сльози.</p>
+            </div>
+        </div>
+
+        <div class="links">
+            <a class="link" href="https://play.google.com/store/games" target="_blank"><img src="img/Google_Play_Store_badge_EN.svg.png" alt="Google Play" height="40"></a>
+        </div>
+    </main>
+    
+    <script src="js/languages.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/animtaion.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>
