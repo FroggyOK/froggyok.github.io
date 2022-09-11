@@ -14,7 +14,7 @@
         <ul class="nav-menu">
             <li class="lang home nav-item"><a href="#homeBtn">Додому</a></li>
             <li class="lang media nav-item"><a href="#mediaBtn">Медіа</a></li>   
-            <li class="lang about nav-item"><a href="#aboutBtn">Про</a></li>
+            <li class="lang about nav-item"><a href="#aboutBtn">Оновлення</a></li>
             <li>
                 <select class="lnSelector">
                     <option value="ua" selected>Укр</option>
@@ -51,13 +51,22 @@
 
         <div class="aboutSec" id="aboutBtn">
             <div class="aboutWrapper">
-                <h1 class="lang aboutH">Про</h1>
-                <p class="lang aboutB">Команда друзів, які вирішили створити цікавий для себе проєкт, вливши в нього душу, проходячи крізь піт і сльози.</p>
+                <div class="update_container">
+                    <div id="last_update">Останні оновлення:</div>
+                    <ul id="update_list">
+                        <li>Implemented store;</li>
+                        <li>Added toad sounds when killing midges;</li>
+                        <li>Fixed the number of midges (cut by 30%);</li>
+                        <li>Added custom sky;</li>
+                        <li>Partially implemented animation of the death of midges.</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="links">
             <a class="link" href="https://play.google.com/store/games" target="_blank"><img src="img/Google_Play_Store_badge_EN.svg.png" alt="Google Play" height="40"></a>
+            <a class="link" id="youtube" href="https://www.youtube.com/channel/UC9zK7LBkBJfnVuyDtnxRGNA" target="_blank"><img src="img/youtube.png" alt="YouTube" width="65"></a>
         </div>
     </main>
     
